@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ChinookBackend.Entities
 {
+    [Table("MediaType")]
     public class MediaType
     {
         #region Column Mappings

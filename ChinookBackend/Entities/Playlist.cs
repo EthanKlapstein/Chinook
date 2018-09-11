@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ChinookBackend.Entities
 {
+    [Table("Playlist")]
     public class Playlist
     {
         #region Column Mappings

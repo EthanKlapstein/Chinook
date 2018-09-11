@@ -26,5 +26,7 @@ namespace ChinookBackend.DAL
         public DbSet<Playlist> Playlists { get; set; }
         public DbSet<PlaylistTrack> PlaylistTracks { get; set; }
         public DbSet<Track> Tracks { get; set; }
+
+       
     }
 }
