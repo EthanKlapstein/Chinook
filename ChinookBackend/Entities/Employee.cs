@@ -17,7 +17,7 @@ namespace ChinookBackend.Entities
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Title { get; set; }
-        public int ReportsTo { get; set; }
+        public int? ReportsTo { get; set; }
         public DateTime? BirthDate { get; set; }
         public DateTime? HireDate { get; set; }
         public string Address { get; set; }
@@ -38,5 +38,7 @@ namespace ChinookBackend.Entities
         public virtual Employee Manager { get; set; }
         public ICollection<Employee> Subbordinates { get; set; } = new HashSet<Employee>();
         #endregion
+
+        //A constructor is responsible for giving all properties of a class meaningful values
     }
 }
