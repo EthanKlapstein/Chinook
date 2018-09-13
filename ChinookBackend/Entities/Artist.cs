@@ -11,8 +11,6 @@ namespace ChinookBackend.Entities
     [Table("Artist")]
     public class Artist
     {
-        //Display all the artists albums
-
         #region Column Mappings
         [Key]
         public int ArtistID { get; set; }
