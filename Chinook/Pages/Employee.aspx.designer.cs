@@ -7,25 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-
-public partial class Page_Employee {
+namespace Chinook.Pages {
     
-    /// <summary>
-    /// EmployeeListView control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.ListView EmployeeListView;
     
-    /// <summary>
-    /// EmployeeDataSource control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.ObjectDataSource EmployeeDataSource;
+    public partial class Employee {
+        
+        /// <summary>
+        /// MessageUserControl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Chinook.UserControls.MessageUserControl MessageUserControl;
+        
+        /// <summary>
+        /// EmployeeListView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView EmployeeListView;
+        
+        /// <summary>
+        /// EmployeeDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource EmployeeDataSource;
+    }
 }

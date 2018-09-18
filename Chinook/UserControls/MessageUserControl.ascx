@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MessageUserControl.ascx.cs" Inherits="Chinook.UserControls.MessageUserControl" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="UserControls_MessageUserControl" Codebehind="MessageUserControl.ascx.cs" %>
 <asp:Panel ID="MessagePanel" runat="server">
     <div class="panel-heading">
         <asp:Label ID="MessageTitleIcon" runat="server"> </asp:Label>

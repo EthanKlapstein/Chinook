@@ -10,6 +10,7 @@ using System.ComponentModel;
 
 namespace ChinookBackend.BLL.CRUD
 {
+    [DataObject]
     public class ArtistController
     {
         [DataObjectMethod(DataObjectMethodType.Select)]

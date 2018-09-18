@@ -1,11 +1,56 @@
-﻿<%@ Page Title="Employee" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Employee.aspx.cs" Inherits="Page_Employee" %>
+﻿<%@ Page Title="Employee" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Employee.aspx.cs" Inherits="Chinook.Pages.Employee" %>
+
+<%@ Register Src="~/UserControls/MessageUserControl.ascx" TagPrefix="uc1" TagName="MessageUserControl" %>
+
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
     <h3>Employees</h3>
+    <uc1:MessageUserControl runat="server" id="MessageUserControl" />
 
         <div>
             <asp:ListView ID="EmployeeListView" runat="server" DataSourceID="EmployeeDataSource" InsertItemPosition="LastItem">
+                <AlternatingItemTemplate>
+                    <tr style="">
+                        <td>
+                            <asp:Button runat="server" CommandName="Delete" Text="Delete" ID="DeleteButton" />
+                            <asp:Button runat="server" CommandName="Edit" Text="Edit" ID="EditButton" />
+                        </td>
+                        <td>
+                            <asp:Label Text='<%# Eval("EmployeeID") %>' runat="server" ID="EmployeeIDLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("FirstName") %>' runat="server" ID="FirstNameLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("LastName") %>' runat="server" ID="LastNameLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("Title") %>' runat="server" ID="TitleLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("ReportsTo") %>' runat="server" ID="ReportsToLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("BirthDate") %>' runat="server" ID="BirthDateLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("HireDate") %>' runat="server" ID="HireDateLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("Address") %>' runat="server" ID="AddressLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("City") %>' runat="server" ID="CityLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("State") %>' runat="server" ID="StateLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("Country") %>' runat="server" ID="CountryLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("PostalCode") %>' runat="server" ID="PostalCodeLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("Phone") %>' runat="server" ID="PhoneLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("Fax") %>' runat="server" ID="FaxLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("Email") %>' runat="server" ID="EmailLabel" /></td>
+                        <td>
+                            <asp:Label Text='<%# Eval("FullName") %>' runat="server" ID="FullNameLabel" /></td>
+                        
+                    </tr>
+                </AlternatingItemTemplate>
                 <EditItemTemplate>
                     <tr style="">
                         <td>
@@ -44,12 +89,6 @@
                             <asp:TextBox Text='<%# Bind("Email") %>' runat="server" ID="EmailTextBox" /></td>
                         <td>
                             <asp:TextBox Text='<%# Bind("FullName") %>' runat="server" ID="FullNameTextBox" /></td>
-                        <td>
-                            <asp:TextBox Text='<%# Bind("Customer") %>' runat="server" ID="CustomerTextBox" /></td>
-                        <td>
-                            <asp:TextBox Text='<%# Bind("Manager") %>' runat="server" ID="ManagerTextBox" /></td>
-                        <td>
-                            <asp:TextBox Text='<%# Bind("Subbordinates") %>' runat="server" ID="SubbordinatesTextBox" /></td>
                     </tr>
                 </EditItemTemplate>
                 <EmptyDataTemplate>
@@ -96,13 +135,7 @@
                         <td>
                             <asp:TextBox Text='<%# Bind("Email") %>' runat="server" ID="EmailTextBox" /></td>
                         <td>
-                            <asp:TextBox Text='<%# Bind("FullName") %>' runat="server" ID="FullNameTextBox" /></td>
-                        <td>
-                            <asp:TextBox Text='<%# Bind("Customer") %>' runat="server" ID="CustomerTextBox" /></td>
-                        <td>
-                            <asp:TextBox Text='<%# Bind("Manager") %>' runat="server" ID="ManagerTextBox" /></td>
-                        <td>
-                            <asp:TextBox Text='<%# Bind("Subbordinates") %>' runat="server" ID="SubbordinatesTextBox" /></td>
+                            <asp:TextBox Text='<%# Bind("FullName") %>' runat="server" ID="FullNameTextBox" /></td>                
                     </tr>
                 </InsertItemTemplate>
                 <ItemTemplate>
@@ -143,12 +176,7 @@
                             <asp:Label Text='<%# Eval("Email") %>' runat="server" ID="EmailLabel" /></td>
                         <td>
                             <asp:Label Text='<%# Eval("FullName") %>' runat="server" ID="FullNameLabel" /></td>
-                        <td>
-                            <asp:Label Text='<%# Eval("Customer") %>' runat="server" ID="CustomerLabel" /></td>
-                        <td>
-                            <asp:Label Text='<%# Eval("Manager") %>' runat="server" ID="ManagerLabel" /></td>
-                        <td>
-                            <asp:Label Text='<%# Eval("Subbordinates") %>' runat="server" ID="SubbordinatesLabel" /></td>
+                        
                     </tr>
                 </ItemTemplate>
                 <LayoutTemplate>
@@ -174,9 +202,6 @@
                                         <th runat="server">Fax</th>
                                         <th runat="server">Email</th>
                                         <th runat="server">FullName</th>
-                                        <th runat="server">Customer</th>
-                                        <th runat="server">Manager</th>
-                                        <th runat="server">Subbordinates</th>
                                     </tr>
                                     <tr runat="server" id="itemPlaceholder"></tr>
                                 </table>
@@ -225,12 +250,6 @@
                             <asp:Label Text='<%# Eval("Email") %>' runat="server" ID="EmailLabel" /></td>
                         <td>
                             <asp:Label Text='<%# Eval("FullName") %>' runat="server" ID="FullNameLabel" /></td>
-                        <td>
-                            <asp:Label Text='<%# Eval("Customer") %>' runat="server" ID="CustomerLabel" /></td>
-                        <td>
-                            <asp:Label Text='<%# Eval("Manager") %>' runat="server" ID="ManagerLabel" /></td>
-                        <td>
-                            <asp:Label Text='<%# Eval("Subbordinates") %>' runat="server" ID="SubbordinatesLabel" /></td>
                     </tr>
                 </SelectedItemTemplate>
             </asp:ListView>

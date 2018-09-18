@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Artist" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Artist.aspx.cs" Inherits="Page_Artist" %>
+﻿<%@ Page Title="Artist" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Artist.aspx.cs" Inherits="Chinook.Pages.Artist"%>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
@@ -28,5 +28,5 @@
         </asp:Repeater>
     </div>
 
-    <asp:ObjectDataSource ID="ArtistDataSoruce" runat="server"></asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="ArtistDataSource" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="ListAllArtists" TypeName="ChinookBackend.BLL.CRUD.ArtistController"></asp:ObjectDataSource>
 </asp:Content>

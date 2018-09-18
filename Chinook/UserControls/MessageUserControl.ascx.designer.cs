@@ -7,54 +7,52 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Chinook.UserControls {
+
+
+public partial class UserControls_MessageUserControl {
     
+    /// <summary>
+    /// MessagePanel control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Panel MessagePanel;
     
-    public partial class MessageUserControl {
-        
-        /// <summary>
-        /// MessagePanel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel MessagePanel;
-        
-        /// <summary>
-        /// MessageTitleIcon control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label MessageTitleIcon;
-        
-        /// <summary>
-        /// MessageTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label MessageTitle;
-        
-        /// <summary>
-        /// MessageLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label MessageLabel;
-        
-        /// <summary>
-        /// MessageDetailsRepeater control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater MessageDetailsRepeater;
-    }
+    /// <summary>
+    /// MessageTitleIcon control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Label MessageTitleIcon;
+    
+    /// <summary>
+    /// MessageTitle control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Label MessageTitle;
+    
+    /// <summary>
+    /// MessageLabel control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Label MessageLabel;
+    
+    /// <summary>
+    /// MessageDetailsRepeater control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Repeater MessageDetailsRepeater;
 }

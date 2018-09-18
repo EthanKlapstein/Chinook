@@ -260,10 +260,12 @@
     </Compile>
     <Compile Include="UserControls\MessageUserControl.ascx.cs">
       <DependentUpon>MessageUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserControls\MessageUserControl.ascx.designer.cs">
       <DependentUpon>MessageUserControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ProcessRequest.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

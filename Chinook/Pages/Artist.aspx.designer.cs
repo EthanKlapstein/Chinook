@@ -7,25 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-
-public partial class Page_Artist {
+namespace Chinook.Pages {
     
-    /// <summary>
-    /// ArtistRepeater control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Repeater ArtistRepeater;
     
-    /// <summary>
-    /// ArtistDataSoruce control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.ObjectDataSource ArtistDataSoruce;
+    public partial class Artist {
+        
+        /// <summary>
+        /// ArtistRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater ArtistRepeater;
+        
+        /// <summary>
+        /// ArtistDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource ArtistDataSource;
+    }
 }
