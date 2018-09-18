@@ -47,7 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\ArtistController.cs" />
+    <Compile Include="BLL\CRUD\ArtistController.cs" />
+    <Compile Include="BLL\CRUD\EmployeeController.cs" />
     <Compile Include="DAL\ChinookContext.cs" />
     <Compile Include="Entities\Album.cs" />
     <Compile Include="Entities\Artist.cs" />
